@@ -43,13 +43,10 @@ def getRatio(price_a, price_b):
     """ Get ratio of price_a and price_b """
     """ ------------- Update this function ------------- """
     if(price_b == 0):
-<<<<<<< HEAD
         return 
     return price_a/price_b
-=======
-        return
     return price_a / price_b
->>>>>>> 3889e8d6b0cbd1f75c2b231b6d71a1ccb567dbce
+    return price_a / price_b
 
 
 # Main
@@ -65,8 +62,6 @@ if __name__ == "__main__":
             prices[stock] = price
             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
 
-<<<<<<< HEAD
         print("Ratio %s" % getRatio(prices["ABC"], prices["DEF"]))
-=======
         print("Ratio %s" % (getRatio(prices['ABC'], prices['DEF'])))
->>>>>>> 3889e8d6b0cbd1f75c2b231b6d71a1ccb567dbce
+        print("Ratio %s" % (getRatio(prices['ABC'], prices['DEF'])))
